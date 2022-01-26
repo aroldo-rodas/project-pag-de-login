@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --clr-1: #18311a;
+    --clr-2: #77B67C;
+    --clr-3: #F5F5F5;
+}
+
+body{
+    background-image: linear-gradient(45deg, var(--clr-1), var(--clr-2));
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 450px;
+    height: 300px;
+    background-color: var(--clr-3);
+    padding: 20px 20px;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.657);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+main h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: flex;
+}
+
+input[type="text"]{
+    margin-top: 40px;
+    margin-bottom: 10px ;
+    font-size: 1.2rem;
+    outline: none;
+    border-style: none;
+    border-radius: 5px;
+    background-color: var(--clr-3);
+}
+
+input[type="password"]{
+    margin-top: 10px;
+    margin-bottom: 10px ;
+    font-size: 1.2rem;
+    outline: none;
+    border-style: none;
+    border-radius: 5px;
+    background-color: var(--clr-3);
+}
+
+button{
+    margin-top: 40px;
+    padding: 5px;
+    font-size: 1.2rem;
+    background-color: var(--clr-2);
+    cursor: pointer;
+    border-style: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    margin-top: 40px;
+    padding: 5px;
+    font-size: 1.2rem;
+    background-color: var(--clr-1);
+    cursor: pointer;
+    border-style: none;
+    border-radius: 5px;
+    color: var(--clr-3);
+    transition: 1s;
+}
+
+main h2::before {
+    margin-top: 5px;
+    content: "";
+    background-color: var(--clr-1);
+    height: 30px;
+    width: 10px;
+    justify-content: center;
+}
